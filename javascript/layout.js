@@ -18,6 +18,7 @@ dojo.ready( function(){
      "appid": "",
      "numitems":100, //100 is max value
      "bingmapskey": this.commonConfig.bingMapsKey,
+     "proxyurl":"",
      "sharinghost":"http://www.arcgis.com",
      "helperServices": this.commonConfig.helperServices
   };
