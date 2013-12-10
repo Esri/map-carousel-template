@@ -32,6 +32,8 @@ Map Carousel is a configurable gallery application template that can be used to 
 
 - [ArcGIS API for JavaScript Resource Center](http://help.arcgis.com/en/webapi/javascript/arcgis/index.html)
 - [ArcGIS Online] (http://www.arcgis.com)
+- Want to create your own template? View the [Application Boilerplate](https://github.com/Esri/application-boilerplate-js) to get started. 
+- [View the Map Carousel template on ArcGIS Online] (http://www.arcgis.com/home/item.html?id=a50c0879ce434568a9ebd735d4bbcc79)
 
 #Issues
 Found a bug or want to request a new feature? Please let us know by submitting an issue. 
