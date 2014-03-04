@@ -21,9 +21,9 @@ dojo.ready( function(){
      "numitems":100, //100 is max value
      "bingmapskey": this.commonConfig.bingMapsKey,
      "proxyurl":"",
-     "sharinghost":"http://www.arcgis.com",
+     "sharinghost":document.location.protocol + "//www.arcgis.com",
      "helperServices": this.commonConfig.helperServices,
-     "mapwidgets": false
+     "mapwidgets": true
   };
 
     var app = new utilities.App(defaults, true);
@@ -94,7 +94,6 @@ function loadPortal(signInRequired) {
 }
 
 function createMap(item) {
-
   var mapDeferred = esri.arcgis.utils.createMap(item.id, dojo.create('div', {
     id: item.id
   }, dojo.byId('mainMap')), {
@@ -107,14 +106,11 @@ function createMap(item) {
   });
   mapDeferred.addCallback(function (response) {
 
-
     map = response.map;
     map.id = item.id;
     map.title = item.title;
     map.owner = item.owner;
     map.snippet = item.snippet;
-
-
     webmaps[currentMap] = map;
 
     //add the home and locate buttons if mapwidgets is set to true 
@@ -135,6 +131,7 @@ function createMap(item) {
       locate.startup();
 
     }
+
     updateDetails(map);
     resizeMap();
     esri.hide(dojo.byId('loadingImg'));
