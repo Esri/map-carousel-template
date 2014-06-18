@@ -1,7 +1,7 @@
 map-carousel-template
 =====================
 
-Map Carousel is a configurable gallery application template that can be used to display the contents of a group using a carousel or grid.
+Map Carousel is a configurable gallery application template that can be used to display web maps in a group using a carousel or grid.
 
 ![Screen Shot](https://dl.dropboxusercontent.com/u/24627279/screenshots/map_carousel_th%202.jpg)
 
