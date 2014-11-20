@@ -23,7 +23,8 @@ dojo.ready( function(){
      "proxyurl":"",
      "sharinghost":document.location.protocol + "//www.arcgis.com",
      "helperServices": this.commonConfig.helperServices,
-     "mapwidgets": false
+     "mapwidgets": false,
+     "galleryopen": true
   };
 
     var app = new utilities.App(defaults, true);
@@ -80,6 +81,9 @@ function loadPortal(signInRequired) {
         createMap(items[0]);
         //create thumbnail gallery
         createThumbs(items);
+        if(this.configOptions.galleryopen){
+          toggleGallery();
+        }
         }else{
           alert('This group does not contain any public web maps to display.');
           esri.hide(dojo.byId('loadingImg'));
