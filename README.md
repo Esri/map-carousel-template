@@ -7,6 +7,10 @@ Map Carousel is a configurable gallery application template that can be used to 
 
 [View it live] (http://www.arcgis.com/apps/MapCarousel/index.html?group=92595b371efa47e49c1b6c5c216c11bc)
 
+#November 2015 Release Updates
+- **Auto play maps:** Template can be configured to auto play through the web maps. 
+
+
 #Features
 **Map Carousel** is a configurable gallery application template that can be used to display the contents of a group using a carousel or grid. The template can be configured using the following option:
 
