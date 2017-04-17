@@ -3,8 +3,6 @@ map-carousel-template
 
 Map Carousel is a configurable gallery application template that can be used to display web maps in a group using a carousel or grid.
 
-![Screen Shot](https://dl.dropboxusercontent.com/u/24627279/screenshots/map_carousel_th%202.jpg)
-
 [View it live] (http://www.arcgis.com/apps/MapCarousel/index.html?group=92595b371efa47e49c1b6c5c216c11bc)
 
 #November 2015 Release Updates
@@ -70,5 +68,3 @@ http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 A copy of the license is available in the repository's license.txt file.
-[](Esri Tags: ArcGIS Online Web Application Templates) 
-[](Esri Language: JavaScript)
