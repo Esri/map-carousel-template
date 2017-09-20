@@ -1,6 +1,6 @@
 define({
   "app": {
-    "title": "Kartenkarussell",
+    "title": "Kartenkarussel",
     "errors": {
       "noMaps": "Diese Gruppe enthält keine öffentlichen Webkarten zum Anzeigen",
       "noGroup": "Gruppe nicht gefunden",

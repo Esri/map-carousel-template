@@ -5,8 +5,6 @@
   <title></title>
   <meta charset="utf-8">
   <meta name="fragment" content="!">
-  <!-- Define the versions of IE that will be used to render the page. See Microsoft documentation for details. Optional. -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="mobile-web-app-capable" content="yes">
@@ -14,8 +12,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <!-- End Responsive -->
   <!-- Use protocol relative urls that way if the browser is viewing the page via HTTPS the js/css file will be requested using the HTTPS protocol -->
-  <link rel="stylesheet" href="//js.arcgis.com/3.18/dijit/themes/claro/claro.css">
-  <link rel="stylesheet" href="//js.arcgis.com/3.18/esri/css/esri.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.22/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/css/esri.css">
   <!-- Load any application specific styles -->
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -24,39 +22,40 @@
   <div class="loading-indicator">
     <div class="loading-message" id="loading_message"></div>
   </div>
-<div class='container_12'>
-<div  id='mapSection' class='grid_12 rounded'>
-  <div id='mainMap'  dir="ltr">
- <div id='thumbnailContainer' class='gallery-thumbs-container' style='display:none;'>
-<div id='thumbnailList' class='container_12 gallery-thumbs-list'></div>
- </div>
-  <img id="loadingImg" alt="" src="images/ajax-loader.gif" style="position:absolute; right:50%; top:50%; z-index:100;display:none;"/>
-    <div class="gallery-nav">
-        <div id="galleryNext" class="gallery-nav-right"></div>
-        <div id="galleryPrev" class="gallery-nav-left"></div>
+  <div class='container_12'>
+    <div id='mapSection' class='grid_12 rounded'>
+      <div id='mainMap' dir="ltr">
+        <div id='thumbnailContainer' class='gallery-thumbs-container' style='display:none;'>
+          <div id='thumbnailList' class='container_12 gallery-thumbs-list'></div>
+        </div>
+        <img id="loadingImg" alt="" src="images/ajax-loader.gif" style="position:absolute; right:50%; top:50%; z-index:100;display:none;"
+        />
+        <div class="gallery-nav">
+          <div id="galleryNext" class="gallery-nav-right"></div>
+          <div id="galleryPrev" class="gallery-nav-left"></div>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-  <div class='clear' ></div>
-  <div id='detailsSection' class='grid_12 rounded'>
-  <div class='grid_9 alpha'>
-    <div class='pod' style='padding-left:10px;'>
-      <div id='mapTitle' class='title' ></div>
-      <div class='subtitle' id='mapOwner'></div>
-    </div>
-  </div>
+    <div class='clear'></div>
+    <div id='detailsSection' class='grid_12 rounded'>
+      <div class='grid_9 alpha'>
+        <div class='pod' style='padding-left:10px;'>
+          <div id='mapTitle' class='title'></div>
+          <div class='subtitle' id='mapOwner'></div>
+        </div>
+      </div>
 
-  <div class='grid_3 omega'>
-    <div class='pod'>
-      <div id='mapCount' class='subtitle'></div>
-    </div>
-  </div>
+      <div class='grid_3 omega'>
+        <div class='pod'>
+          <div id='mapCount' class='subtitle'></div>
+        </div>
+      </div>
       <div>
-         <div id='thumbs' class='gallery-thumb'></div>
-  </div>
-  </div>
+        <div id='thumbs' class='gallery-thumb'></div>
+      </div>
+    </div>
 
-</div>
+  </div>
 
   <script type="text/javascript">
     var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
@@ -67,26 +66,26 @@
       packages: [{
         name: "application",
         location: package_path + '/js'
-            }, {
+      }, {
         name: "config",
         location: package_path + '/config'
-            }, {
+      }, {
         name: "arcgis_templates",
         location: package_path + '/..'
-            }]
+      }]
     };
     // Have to handle a locale parameter before dojo is loaded
-      if (location.search.match(/locale=([\w\-]+)/)) {
-          dojoConfig.locale = RegExp.$1;
-      }
+    if (location.search.match(/locale=([\w\-]+)/)) {
+      dojoConfig.locale = RegExp.$1;
+    }
   </script>
-  <script type="text/javascript" src="//js.arcgis.com/3.18/"></script>
+  <script type="text/javascript" src="https://js.arcgis.com/3.22/"></script>
   <script type="text/javascript">
     require([
-            "config/templateConfig",
-            "application/template",
-            "application/main"
-        ], function (
+      "config/templateConfig",
+      "application/template",
+      "application/main"
+    ], function (
       templateConfig,
       Template,
       Main
@@ -108,4 +107,5 @@
     });
   </script>
 </body>
+
 </html>

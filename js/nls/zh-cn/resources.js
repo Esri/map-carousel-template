@@ -1,6 +1,6 @@
 define({
   "app": {
-    "title": "地图转盘",
+    "title": "Map Carousel",
     "errors": {
       "noMaps": "该群组不含任何要显示的公共 Web 地图",
       "noGroup": "找不到群组",

@@ -1,27 +1,31 @@
 define({
   root: ({
-  app:{
-   title:"Map Carousel",
-    errors:{
-      noMaps: "This group does not contain any public web maps to display",
-      noGroup: "Group not found",
-      createGroup: "Unable to create group",
-      bitly: 'bitly is used to shorten the url for sharing. View the readme file for details on creating and using a bitly key',
-      general: "Error"
-    },
-    mapcount: "Map ${page} of  ${total}"
-  }
-}),
+    app: {
+      title: "Map Carousel",
+      errors: {
+        noMaps: "This group does not contain any public web maps to display",
+        noGroup: "Group not found",
+        createGroup: "Unable to create group",
+        bitly: 'bitly is used to shorten the url for sharing. View the readme file for details on creating and using a bitly key',
+        general: "Error"
+      },
+      mapcount: "Map ${page} of  ${total}"
+    }
+  }),
   "ar": 1,
+  "bs": 1,
   "cs": 1,
   "da": 1,
   "de": 1,
+  "el": 1,
   "es": 1,
   "et": 1,
   "fi": 1,
   "fr": 1,
   "he": 1,
-  "hr": 1, 
+  "hi": 1,
+  "hr": 1,
+  "id": 1,
   "it": 1,
   "ja": 1,
   "ko": 1,

@@ -1,6 +1,6 @@
 define({
   "app": {
-    "title": "Map Carousel",
+    "title": "Bản đồ Ảnh trượt Xoay vòng",
     "errors": {
       "noMaps": "Nhóm này không chứa bất kỳ bản đồ web công khai nào để hiển thị",
       "noGroup": "Không tìm thấy nhóm",
